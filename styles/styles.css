@@ -32,6 +32,7 @@ body {
     left: 0;
     width: 20%;
     height: 100vh;
+    max-width: 300px;
     /* border-right: 1px solid #ffffff; */
 }
 
@@ -171,6 +172,18 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
+}
+
+.github-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.github-image {
+    max-width: 100%;
 }
 
 .loader {
