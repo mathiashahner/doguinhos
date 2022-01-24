@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="shortcut icon" href="./styles/img/icon.png" type="image/x-icon">
+    <title>Doguinhos</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="container-menu">
+            <h1 class="title-menu">RAÇAS</h1>
+    
+            <div class="race-itens">
+                <div class="race-item">
+                    <input class="race-button" type="radio" id="race-random" name="race-dog" value="random" checked>
+                    <label for="race-random" class="race-desc">Aleatória</label>
+                </div>
+                <div class="race-item">
+                    <input class="race-button" type="radio" id="race-akita" name="race-dog" value="akita">
+                    <label for="race-akita" class="race-desc">Akita</label>
+                </div>
+                <div class="race-item">
+                    <input class="race-button" type="radio" id="race-collie-border" name="race-dog" value="collie/border">
+                    <label for="race-collie-border" class="race-desc">Border Collie</label>
+                </div>
+                <div class="race-item">
+                    <input class="race-button" type="radio" id="race-golden-retriever" name="race-dog" value="retriever/golden">
+                    <label for="race-golden-retriever" class="race-desc">Golden</label>
+                </div>
+                <div class="race-item">
+                    <input class="race-button" type="radio" id="race-husky" name="race-dog" value="husky">
+                    <label for="race-husky" class="race-desc">Husky</label>
+                </div>
+                <div class="race-item">
+                    <input class="race-button" type="radio" id="race-labrador" name="race-dog" value="labrador">
+                    <label for="race-labrador" class="race-desc">Labrador</label>
+                </div>
+                <div class="race-item">
+                    <input class="race-button" type="radio" id="race-malamute" name="race-dog" value="malamute">
+                    <label for="race-malamute" class="race-desc">Malamute</label>
+                </div>
+                <div class="race-item">
+                    <input class="race-button" type="radio" id="race-pinscher-miniature" name="race-dog" value="pinscher/miniature">
+                    <label for="race-pinscher-miniature" class="race-desc">Pinscher</label>
+                </div>
+                <div class="race-item">
+                    <input class="race-button" type="radio" id="race-pitbull" name="race-dog" value="pitbull">
+                    <label for="race-pitbull" class="race-desc">Pitbull</label>
+                </div>
+                <div class="race-item">
+                    <input class="race-button" type="radio" id="race-pug" name="race-dog" value="pug">
+                    <label for="race-pug" class="race-desc">Pug</label>
+                </div>
+                <div class="race-item">
+                    <input class="race-button" type="radio" id="race-rottweiler" name="race-dog" value="rottweiler">
+                    <label for="race-rottweiler" class="race-desc">Rottweiler</label>
+                </div>
+                <div class="race-item">
+                    <input class="race-button" type="radio" id="race-dachshund" name="race-dog" value="dachshund">
+                    <label for="race-dachshund" class="race-desc">Salsicha</label>
+                </div>
+                <div class="race-item">
+                    <input class="race-button" type="radio" id="race-stbernard" name="race-dog" value="stbernard">
+                    <label for="race-stbernard" class="race-desc">São Bernardo</label>
+                </div>
+                <div class="race-item">
+                    <input class="race-button" type="radio" id="race-shihtzu" name="race-dog" value="shihtzu">
+                    <label for="race-shihtzu" class="race-desc">Shihtzu</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="container-menu">
+            <h1 class="title-menu">LAYOUT</h1>
+
+            <div class="layout-options">
+                <div class="layout-pair">
+                    <label class="layout-label">
+                        <input class="layout-button" type="radio" name="layout" value="1" checked>
+                        <img class="layout-image" src="./styles/img/lay-1.png" alt="Layout 1">
+                    </label>
+                    <label class="layout-label">
+                        <input class="layout-button" type="radio" name="layout" value="2">
+                        <img class="layout-image" src="./styles/img/lay-2.png" alt="Layout 2">
+                    </label>
+                </div>
+                <div class="layout-pair">
+                    <label class="layout-label">
+                        <input class="layout-button" type="radio" name="layout" value="3">
+                        <img class="layout-image" src="./styles/img/lay-3.png" alt="Layout 3">
+                    </label>
+                    <label class="layout-label">
+                        <input class="layout-button" type="radio" name="layout" value="4">
+                        <img class="layout-image" src="./styles/img/lay-4.png" alt="Layout 4">
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <button class="button-image">DOGUINHO</button>
+    </div>
+
+    <div class="container">
+        <div class="loader-container">
+            <div class="loader"></div>
+        </div>
+
+        <img class="dog-image-1" src="./styles/img/home.jpg" alt="A doggo here" id="dogImage">
+    </div>
+
+    <script src="./src/main.js"></script>
+</body>
+</html>
