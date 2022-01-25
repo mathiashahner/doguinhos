@@ -1,9 +1,7 @@
 # doguinhos
-cute dog pictures
 
+cute dog pictures developed using only html, css and javascript
 access website clicking [***here***](https://mathiashahner.github.io/doguinhos/)
-
-developed using only html, css and javascript
 
 ### packages used:
 - [***axios***](https://axios-http.com/) - for http requests
