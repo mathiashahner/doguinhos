@@ -132,10 +132,15 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: 75%;
+    max-width: 80%;
+    min-width: 75px;
     position: relative;
+}
+
+.container-images {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 }
 
@@ -163,15 +168,7 @@ body {
 
 .dog-image-3,
 .dog-image-4 {
-    height: 43vh;
-}
-
-.loader-container {
-    display: none;
-    align-items: center;
-    position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 46vh;
 }
 
 .github-link {
@@ -186,10 +183,21 @@ body {
     max-width: 100%;
 }
 
+.loader-container {
+    background: #303030;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    min-height: 75px;
+    min-width: 75px;
+    height: 100%;
+    width: 100%;
+}
+
 .loader {
     width: 75px;
     height: 75px;
-    margin: 0px auto;
     border-radius: 50%;
     border: 7px solid #aaaaaa;
     border-top: 7px solid #1d1d1d;

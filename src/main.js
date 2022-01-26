@@ -5,19 +5,21 @@ const btnImage = document.querySelector('.button-image')
 btnImage.addEventListener('click', btnImageClick)
 
 async function btnImageClick() {
-    setLoaderState('flex')
+    const loader = document.querySelector('.loader-container')
+    loader.style.display = 'flex'
 
     const layoutSelected = document.querySelector('input[name="layout"]:checked').value
     const dogImage = await getDogImage(document.querySelector('input[name="race-dog"]:checked').value, layoutSelected)
-    
+
     if(dogImage.status === 'success') {
-        const containerImage = document.querySelector('.container')
+        const containerImage = document.querySelector('.container-images')
         setLayoutImages(layoutSelected, dogImage, containerImage)
     } else {
         console.log('Erro na axios.get')
     }
 
-    setLoaderState('none')
+    await Delay(layoutSelected * 500)
+    loader.style.display = 'none'
 }
 
 async function getDogImage(race, layoutSelected) {
@@ -44,7 +46,10 @@ function setLayoutImages(layoutSelected, dogImage, containerImage) {
     containerImage.innerHTML = layoutCode
 }
 
-function setLoaderState(state) {
-    const loader = document.querySelector('.loader-container')
-    // loader.style.display = state
+function Delay(miliseconds) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve()
+        }, miliseconds)
+    })
 }
