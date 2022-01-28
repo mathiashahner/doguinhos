@@ -11,6 +11,6 @@ access website clicking [***here***](https://mathiashahner.github.io/doguinhos/)
 
 ### to run locally:
 ```
-npm install //to install dependencies
-npm run dev //create a local server on port 1234
+npm install
+npm run dev
 ```
